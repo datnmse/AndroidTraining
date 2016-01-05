@@ -83,38 +83,36 @@ public class MainOperator {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		int choice;
-		System.out.println("Menu: ");
-		System.out.println("1. Number Operator");
-		System.out.println("2. Logic And Ralational Operator");
-		System.out.println("3. Bit Operator");
-		System.out.println("4. Exit");
-
-		System.out.println("Please choice: ");
-		choice = Integer.parseInt(scanin.nextLine());
 		while (true) {
+
+			System.out.println("Menu: ");
+			System.out.println("1. Number Operator");
+			System.out.println("2. Logic And Ralational Operator");
+			System.out.println("3. Bit Operator");
+			System.out.println("4. Exit");
+
+			System.out.println("Please choice: ");
+			choice = Integer.parseInt(scanin.nextLine());
+
 			if (choice == 4)
 				break;
 			switch (choice) {
-			case 1: {
-				Input();
-				NumberOperator();
-				break;
+				case 1: {
+					Input();
+					NumberOperator();
+					break;
+				}
+				case 2: {
+					LogicAndRelationalOperator();
+					break;
+				}
+				case 3: {
+					Input();
+					BitOperator();
+					break;
+				}
 			}
-			case 2: {
-				LogicAndRelationalOperator();
-				break;
-			}
-			case 3: {
-				Input();
-				BitOperator();
-				break;
-			}
-
-			}
-			System.exit(0);
 		}
-
 	}
 }

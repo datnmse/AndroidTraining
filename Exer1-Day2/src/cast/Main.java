@@ -16,22 +16,23 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanin  = new Scanner(System.in); 
+		Scanner scanin = new Scanner(System.in); // Đổi lại tên biến nhé,
+													// scanInput hoặc input
 		int a;
 		int b;
-		//input
+		// input
 		System.out.println("Input number a: ");
 		a = scanin.nextInt();
 		System.out.println("Input number b: ");
-		b = scanin.nextInt();	
-		
-		//widening conversion
-		double d = (double)a/b;
-		System.out.println("Casting windening conversion is: "+d);
-		//narrow conversion
-		float f= 40.021312f;
-		int narrow = (int)f+2;
-		System.out.println("castiong narrow conversion is: "+narrow);
-		
+		b = scanin.nextInt();
+
+		// widening conversion
+		double d = (double) a / b;
+		System.out.println("Casting windening conversion is: " + d);
+		// narrow conversion
+		float f = 40.021312f; // Format code Dùng Ctr + Shift + F
+		int narrow = (int) f + 2;
+		System.out.println("castiong narrow conversion is: " + narrow);
+
 	}
 }
